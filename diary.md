@@ -1,6 +1,8 @@
 # Challenge Diary
 
-Same as last year, I started a few days late.
+Same as last year, I started a few days late and I don't start the challenges right as they are released. I am only
+trying to solve them before I go to bed, not speed run them. I'm not trying for Top 100. If I make it to Top 1000 for a
+challenge part I'm happy, Top 500 I'm estatic.
 
 
 ## Day 1 - "The Tyranny of the Rocket Equation"
@@ -39,4 +41,18 @@ method, then figuring the total steps each wire took.
 Rankings
  - Part 1 => 2478
  - Part 2 => 2252
+
+## Day 4 - "Secure Container"
+
+Part one was simple enough. Use a `preg_match()` with back references to check for the adjacent digits, then loop through
+to check if the digits are incrementing. Part two was just updating the `preg_match()` to a `preg_match_all()` and adding
+a `+` after the backref to capture all the groups of matching numbers. The hard part is often correctly interpreting the
+subtly of the puzzle text with the example. And here is another time that has gotten me. I first thought that ANY group
+has to be multiples of 2. So, a group lenght of 2 or 4 would work while 3 would not. However, it really meant that there
+had to be at least one group of length 2. Additional groups could any length. Sigh, fixing that I wondered why my new
+answer was higher than part one, silly me keep the test input in when running. Go back to real input and solved.
+
+Rankings
+ - Part 1 => 3233
+ - Part 2 => 2913
 
