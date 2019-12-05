@@ -56,3 +56,12 @@ Rankings
  - Part 1 => 3233
  - Part 2 => 2913
 
+## Day 5 - "Sunny with a Chance of Asteroids"
+
+Back with the opcode machine. Six new instructions, parameter modes, plus instruction jumping. As always it is the fine
+print that can get you. At this point I just may refactor it to a proper `while()` loop inside the function.
+
+Rankings
+ - Part 1 => 1734
+ - Part 2 => 1483
+
